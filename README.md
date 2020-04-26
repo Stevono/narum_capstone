@@ -25,7 +25,7 @@ library(viridis)
 
 3) Make an “if” “then” prediction that is related to item #2. It should be of the general form, “if X is true, then Y should happen”.
 
-***It is predicted that if the nanoparticle is <100 nm in diameter and clathrin-mediated endocytosis is inhibited, then the uptake will change if the diameter is >100 nm due to the influence of caveolae-mediated endocytosis..***
+***It is predicted that if the nanoparticle is <100 nm in diameter and clathrin-mediated endocytosis is inhibited, then the uptake will change if the diameter is >100 nm due to the influence of caveolae-mediated endocytosis.***
 
 4) What dependent variable will be observed to test this prediction in item #3? What predictor variable will be used to manipulate the system experimentally? Define the inherent properties of these variables (eg, are they sorted, ordered or measured).
 
@@ -37,7 +37,7 @@ library(viridis)
 
 6) What is the statistical test you would use to test the hypothesis in item #5? Briefly defend what makes this appropriate for the hypothesis and the experimental variables. If there are alternatives, why is this approach chosen instead? Points will not be awarded if the justification involves something like "because everybody does it this way".
 
-***A one-way ANOVA test will be conducted to test the hypothesis since there will be more than two sizes measured, and it can be used to test if there are differences between groups without increased error as a result of multiple comparisons. Additional post-hoc tests will be conducted if significance is found during this analysis. A student's t-test or regression will not be conducted since there would be increased type 1 family-wise error with multiple t-tests. The regression analysis may not be as suitable for this experiment since nanobead size may be involved in many uptake pathways, so an inference ***
+***A one-way ANOVA test will be conducted to test the hypothesis since there will be more than two sizes measured, and it can be used to test if there are differences between groups without increased error as a result of multiple comparisons. Additional post-hoc tests will be conducted if significance is found during this analysis. A student's t-test or regression will not be conducted since there would be increased type 1 family-wise error with multiple t-tests. The regression analysis may not be as suitable for this experiment since nanobead size may be involved in many uptake pathways, so an inference.***
 
 7) List the procedures and decision rules you have for executing and interpreting the experiment. These procedures range from selection of experimental units, to randomization to primary endpoint to threshold decisions. Define (and defend) what you believe will be the independent replicate.
 
@@ -141,7 +141,7 @@ pwr.pct <- sum(pval<0.05)/sims*100
 paste(pwr.pct, sep="", "% power. Change 'n' in your initializer for higher or lower power.")
 ```
 
-***From the power analysis, any sample size showed 100% power, which is due to the large differences between sample groups. However, in post-hoc analysis, it was found that individual comparisons between groups that were more similar in size required much larger sample sizes to achieve 80% power. As an example, it required n=40 to achieve 80% power between the 50 nm and 100 nm nanobead groups, suggesting that a large enough sample size can achieve significant difference. ***
+***From the power analysis, any sample size showed 100% power, which is due to the large differences between sample groups. However, in post-hoc analysis, it was found that individual comparisons between groups that were more similar in size required much larger sample sizes to achieve 80% power. As an example, it required n=40 to achieve 80% power between the 50 nm and 100 nm nanobead groups, suggesting that a large enough sample size can achieve significant difference.***
 
 10) Write up it all in RMarkdown. Code chunks to illustrate specific points are welcome other than for the Monte Carlo code. Knit and submit and upload the html document by the due data. If it is readable to your best friend, it is readable to us.
 
